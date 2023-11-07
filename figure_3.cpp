@@ -217,7 +217,7 @@ void figure_3::on_pushButton_clicked()
     char*  ch3;
     QByteArray ba3 = text3.toLatin1(); // must
     ch3=ba3.data();
-    if(asc)
+    if(!asc)
     {
         if(text1.length()==0)
         {
@@ -324,15 +324,15 @@ void figure_3::on_pushButton_clicked()
                         int key1word = static_cast<int>(keybits1.to_ulong());
                         int key2word = static_cast<int>(keybits2.to_ulong());
                         int key3word = static_cast<int>(keybits3.to_ulong());
-                        int encrypted = SAES_3::decrypt1(plaintextbitsword, key1word);
+                        int encrypted = SAES_3::encrypt1(plaintextbitsword, key1word);
                         if(cas==2)
                         {
-                            encrypted = SAES_3::decrypt1(plaintextbitsword, key2word);
+                            encrypted = SAES_3::encrypt1(plaintextbitsword, key2word);
                         }
                         else
                         {
-                            encrypted = SAES_3::decrypt1(plaintextbitsword, key2word);
-                            encrypted = SAES_3::decrypt1(plaintextbitsword, key3word);
+                            encrypted = SAES_3::encrypt1(plaintextbitsword, key2word);
+                            encrypted = SAES_3::encrypt1(plaintextbitsword, key3word);
                         }
                         bitset<16> encryptedbits(encrypted);
                         QString qstr = QString::fromStdString(encryptedbits.to_string());
@@ -432,15 +432,15 @@ void figure_3::on_pushButton_clicked()
                     int key1word = static_cast<int>(keybits1.to_ulong());
                     int key2word = static_cast<int>(keybits2.to_ulong());
                     int key3word = static_cast<int>(keybits3.to_ulong());
-                    int encrypted = SAES_3::decrypt1(plaintextbitsword, key1word);
+                    int encrypted = SAES_3::encrypt1(plaintextbitsword, key1word);
                     if(cas==2)
                     {
-                        encrypted = SAES_3::decrypt1(plaintextbitsword, key2word);
+                        encrypted = SAES_3::encrypt1(plaintextbitsword, key2word);
                     }
                     else
                     {
-                        encrypted = SAES_3::decrypt1(plaintextbitsword, key2word);
-                        encrypted = SAES_3::decrypt1(plaintextbitsword, key3word);
+                        encrypted = SAES_3::encrypt1(plaintextbitsword, key2word);
+                        encrypted = SAES_3::encrypt1(plaintextbitsword, key3word);
                     }
                     bitset<16> encryptedbits(encrypted);
                     string encryptedAscii = SAES_3::binaryToAscii(encryptedbits);
