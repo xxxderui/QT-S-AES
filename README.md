@@ -36,5 +36,17 @@
 ASCII码也可以![F{UHVIRTJ@(2QBG@3CIO 9O](https://github.com/xxxderui/QT-S-AES/assets/126744071/f7c4feb5-7b88-4573-8f31-95c9da16f029)
 遭遇攻击，输入明密文对![2QG}{$V)PD8H7X772)716Y1](https://github.com/xxxderui/QT-S-AES/assets/126744071/9bbb4bd7-d959-41ca-859d-3a6e00c231b7)
 得出可能的密钥![UR$B~SWV`DM`UI`R(YGL @M](https://github.com/xxxderui/QT-S-AES/assets/126744071/dc03d220-250a-4612-a725-70ad7f40a1ed)
-输入修改前的明文，密钥![~I5M QRQPXQMF}J~)0%PWSF](https://github.com/xxxderui/QT-S-AES/assets/126744071/dc177ece-8ffa-42dd-8cc8-12c51f3ff2ab)
+CBC模式下输入修改前的明文，密钥![~I5M QRQPXQMF}J~)0%PWSF](https://github.com/xxxderui/QT-S-AES/assets/126744071/dc177ece-8ffa-42dd-8cc8-12c51f3ff2ab)
 得出修改前后的结果
+交叉验证：输入明文密钥
+
+![MYBT8R$FTD2)1GKI}H5E5$S](https://github.com/xxxderui/QT-S-AES/assets/126744071/64745113-d92d-4fc7-abfe-90c5ecd55968)
+得到密文
+![`7Q6OE$}GA_C DZP494{7HT](https://github.com/xxxderui/QT-S-AES/assets/126744071/c73c7870-a188-4549-b1c2-11f0972aefdc)
+与其他小组的对比
+![WDV0V$O0D9U_V26WAWIIWVO](https://github.com/xxxderui/QT-S-AES/assets/126744071/17eb4a31-3e67-4b47-a7af-76c9998532d3)
+![MY9YMZ~F~H_5Y A1R4J6VYF](https://github.com/xxxderui/QT-S-AES/assets/126744071/a0a99f9c-5b72-4662-b74f-758c33e653c4)
+发现结果完全相同，解密过程同样
+![Q~4AW9TDFJ5%2@}9672J0T8](https://github.com/xxxderui/QT-S-AES/assets/126744071/a263b764-8013-4408-82a5-c76dfa5dbe4d)
+![RS )~1{XIMUIBU~)32~ZARJ](https://github.com/xxxderui/QT-S-AES/assets/126744071/277b51e4-17ce-4ae1-b0b2-9d80f36c820a)
+
